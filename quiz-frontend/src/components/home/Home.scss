@@ -1,0 +1,123 @@
+.home-page {
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .quiz-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 400px;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    .quiz-controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .form-group {
+        margin-bottom: 1rem;
+        text-align: left;
+        width: 100%;
+
+        label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+
+        select {
+          width: 100%;
+          padding: 0.8rem;
+          border-radius: 5px;
+          border: none;
+          background: rgba(255, 255, 255, 0.2);
+          color: #fff;
+          font-size: 1rem;
+
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+          }
+          option {
+            background-color: rgba(
+              48,
+              43,
+              99,
+              0.9
+            ); // Dark background for options
+            color: #fff; // White text for options
+            padding: 0.5rem; // Add some padding for better visibility
+            transition: background-color 0.3s ease; // Transition effect
+
+            &:hover,
+            &:focus {
+              background-color: rgba(
+                224,
+                172,
+                105,
+                0.9
+              ); // Hover/focus background color
+            }
+          }
+        }
+      }
+
+      .start-btn {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 5px;
+        border: none;
+        background: #fff;
+        color: #302b63;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #e0ac69;
+          color: #fff;
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        &:disabled {
+          background: rgba(255, 255, 255, 0.2);
+          color: #fff;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  .body {
+    width: 100%;
+    height: 80%;
+    background: #fff;
+    border-top-left-radius: 50% 30%;
+    border-top-right-radius: 50% 30%;
+    border-bottom-left-radius: 20% 50%;
+    border-bottom-right-radius: 20% 50%;
+  }
+}

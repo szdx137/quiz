@@ -1,0 +1,60 @@
+.nav-header {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  position: relative;
+
+  .nav-container {
+    margin-left: 5%;
+    text-align: center;
+    flex-grow: 1;
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .active-class {
+        color: #e0ac69;
+        font-weight: bold;
+      }
+
+      li {
+        margin: 0 1rem;
+
+        a {
+          color: rgb(161, 154, 154);
+          text-decoration: none;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: #e0ac69;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+          }
+        }
+      }
+    }
+  }
+
+  .signout-container {
+    // position: absolute;
+    margin-right: 0.5rem;
+    // text-align: right;
+  }
+
+  .signout-button {
+    background-color: transparent;
+    border: none;
+    color: rgb(161, 154, 154);
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #e0ac69;
+    }
+  }
+}
